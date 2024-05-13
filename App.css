@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+ 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+ 
+.title {
+  color: #333;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+ 
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.tableRow {
+  cursor: pointer;
+}
+ 
+ 
+.characterCard {
+  position: fixed; /* Cambiado de absolute a fixed para centrar respecto a la ventana del navegador */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el card exactamente en el medio */
+  width: auto; /* Opcional: ajusta el ancho si es necesario */
+  min-width: 300px; /* Opcional: asegura un ancho mínimo */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+ 
+.characterImage {
+  width: 100px;
+  height: 100px;
+  display: block; /* Cambio a display block para permitir centrado automático */
+  margin: 10px auto;
+}
+ 
+.closeButton {
+  display: block; /* Asegura que el botón esté en una nueva línea */
+  margin: 10px auto; /* Centra el botón horizontalmente */
+  padding: 5px 20px; /* Añade algo de padding para un mejor diseño */
+}
